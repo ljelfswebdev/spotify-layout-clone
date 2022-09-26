@@ -1,0 +1,29 @@
+.homepage{
+    background-color:  $blue;
+
+    .container {
+        padding: rem-calc(10);
+    }
+
+    &__content {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        padding: rem-calc(30 0);
+
+        h1{
+            font-family: $secondary;
+            font-size: rem-calc(32);
+            color: $green;
+            text-align: center;
+        }
+        p{
+            font-family: $secondary;
+            font-size: rem-calc(16);
+            color: $green;
+            text-align: center;
+        }
+    }
+
+
+}

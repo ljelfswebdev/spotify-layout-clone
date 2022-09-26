@@ -5,27 +5,29 @@
 
 @import "components/navbar.scss";
 @import "components/footer.scss";
+@import "components/buttons.scss";
+
+@import "pages/homepage.scss";
 
 body {
 margin: 0 !important;
 }
 .container {
-    margin: rem-calc(10)
 }
 .header{
-    color: $gold;
+    color: #fff;
     font-family: $primary;
     font-size: rem-calc(32);
 }
 
 .sub-header {
-    color: $gold;
+    color: #919496;
     font-family: $secondary;
     font-size: rem-calc(20);
 }
 
 .text {
-    color: $lightGreen;
+    color: $green;
     font-family: $secondary;
     font-size: rem-calc(16);
 }

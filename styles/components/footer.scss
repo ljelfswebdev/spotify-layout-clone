@@ -8,26 +8,65 @@
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-gap: rem-calc(10);
-    background-color: $darkGreen;
+    background-color:#000;
     padding:rem-calc(20 5);
     position: absolute;
     bottom:0;
     width:100%;
 
+    &__company {
+        display:flex;
+		margin-top:rem-calc(10);
+		font-family: $secondary;
+		color:#fff;
+		font-size: rem-calc(32);
+		text-decoration: none;
+        svg{
+            height: rem-calc(40);
+            width: rem-calc(40);
+        }
+    }
+
     &__links {
         list-style: none;
-        display: contents;;
+        display: contents;
         &-item {
             font-size: rem-calc(20);
-            color: $gold;
+            color: #fff;
             font-family: $primary;
-            opacity: 0.6;
 
             &:hover {
-                opacity:1;
+                color: $green;
                 cursor:pointer;
             }
 
+        }
+    }
+
+    &__socials {
+        list-style: none;
+        display:flex;
+        padding-top:rem-calc(20);
+        padding-bottom:rem-calc(20);
+        justify-content: center;
+        margin-block-start: 0em !important;
+        margin-block-end: 0em !important;
+        padding-inline-start: 0px !important;
+        
+        li {
+            margin-right: rem-calc(5);
+            margin-left: rem-calc(5);
+            svg{
+                height:rem-calc(30);
+                width:rem-calc(30);
+
+                &:hover {
+                    path{
+                        fill:$green;
+                        cursor: pointer;
+                    }
+                }
+            }
         }
     }
 }
@@ -38,20 +77,20 @@
     @media  (min-width: 768px) {
         display: none;
     }
-    background-color: $darkGreen;
+    background-color: #000;
     position: absolute;
     bottom:0;
     width:100%;
 
     .accordions {
-        background-color: $darkGreen;
+        background-color: #000;
         overflow: hidden;
         width:100%;
     }
     
     .accordion {
         width: 100%;
-        color: $gold;
+        color: #fff;
         overflow: hidden;
     }
     
@@ -59,7 +98,7 @@
         display: flex;
         justify-content: space-between;
         padding: 0.5em;
-        background-color: $darkGreen;
+        background-color: #000;
         font-weight: 500;
         cursor: pointer;
     }
@@ -69,7 +108,7 @@
     }
     
     .acc-label:hover {
-        background-color: $lightGreen;
+        background-color: #000;
     }
     
     .acc-label::after {
@@ -84,8 +123,8 @@
     .acc-content {
         max-height: 0;
         padding: 0 1em;
-        color: $gold;
-        background-color: $lightGreen;
+        color: #fff;
+        background-color: #000;
         transition: all 0.4s ease;
     }
     

@@ -6,7 +6,21 @@
 	align-items: center;
 	flex-wrap: wrap;
 	transition: top .75s ease-in;
-	background-color: $darkGreen;
+	background-color: #000;
+
+	.logo {
+		display:flex;
+		align-items: center;
+		font-family: $secondary;
+		color:#fff;
+		font-size: rem-calc(32);
+		text-decoration: none;
+		svg{
+			height: rem-calc(50);
+			width: rem-calc(50);
+		}
+	
+	}
 
 	.menu{
 		list-style: none;
@@ -22,24 +36,18 @@
 			display: inline-block;
 			min-width: rem-calc(75);
 			padding: rem-calc(0 10);
-			transition: 1s all;
 			text-decoration: none;
 			font-size: rem-calc(20);
 
 			&:link, &:visited{
-				color: $gold;
+				color: #fff;
 			}
 
-			&:focus, &:hover, &:active{
-				transform: scale(1.1) rotate(-2deg);
-				color: $gold;
+			&:focus, &:hover, &:active{	
+				color: $green;
 			}
 		}
-	}
 
-	.logo{
-		display: inline-block;
-		width: rem-calc(150);
 	}
 
     .menu-icon{
@@ -48,14 +56,14 @@
 		padding: 28px 20px;
 
 		.navicon{
-			background: $gold;
+			background: #fff;
 			display: block;
 			height: 2px;
 			position: relative;
 			width: 1.625rem;
 
 			&:before, &:after{
-				background: $gold;
+				background: #fff;
 				content: '';
 				display: block;
 				height: 100%;

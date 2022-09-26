@@ -1,0 +1,23 @@
+.button {
+    width: rem-calc(200px);
+    height: rem-calc(50);
+    border-radius: 25px;
+    font-size: rem-calc(16);
+    font-family: $secondary;
+
+    &:hover {
+        cursor:pointer;
+    }
+
+    &--homepage {
+        background-color: $green;
+        color: $blue;
+        border: none;
+
+        &:hover {
+            background-color: $blue;
+            color: $green;
+            border: 2px solid $green;
+        }
+    }
+}
