@@ -12,7 +12,6 @@ export default function Home() {
       </Head>
       <div className="container">
         <div className="homepage__content">
-
           <h1>
             Listening is everything
           </h1>
@@ -20,10 +19,12 @@ export default function Home() {
           <p>
             Millions of songs and podcasts. No credit card needed.
           </p>
+          <div className="homepage__content__button">
+            <button className="button button--homepage">
+              Get Spotify Free
+            </button>
+          </div>
 
-          <button className="button button--homepage">
-            Get Spotify Free
-          </button>
         </div>
       </div>
 

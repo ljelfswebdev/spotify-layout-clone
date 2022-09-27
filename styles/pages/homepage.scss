@@ -10,18 +10,25 @@
         align-items: center;
         justify-content: center;
         padding: rem-calc(30 0);
+        height: fit-content;
+        position:relative;
 
         h1{
             font-family: $secondary;
-            font-size: rem-calc(32);
+            font-size: rem-calc(48);
             color: $green;
             text-align: center;
         }
         p{
             font-family: $secondary;
-            font-size: rem-calc(16);
+            font-size: rem-calc(32);
             color: $green;
             text-align: center;
+        }
+
+        &__button{
+            justify-content: center;
+            display: flex;
         }
     }
 

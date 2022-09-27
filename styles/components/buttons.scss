@@ -20,4 +20,57 @@
             border: 2px solid $green;
         }
     }
+
+    &--facebook{
+        width:rem-calc(250);
+        color: #fff;
+        background-color: #3b5998;
+        border:none;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        grid-gap: 5px;
+        font-family: $primary;
+
+        &:hover {
+            border:2px solid #3b5998;
+            color: #3b5998;
+            background-color: #fff;
+
+            svg{
+                path{
+                    fill: #3b5998;
+                }
+            }
+        }
+    }
+
+    &--google {
+        width:rem-calc(250);
+        color: #666;
+        border:2px solid #666;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        grid-gap: 5px;
+        font-family: $primary;
+        background-color: #fff;
+
+        svg{
+            path{
+                fill:#666;
+            }
+        }
+
+        &:hover {
+            background-color: #666;
+            color:#fff;
+
+            svg{
+                path{
+                    fill:#fff
+                }
+            }
+        }
+    }
 }
