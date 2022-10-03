@@ -5,7 +5,7 @@ const signup = () => {
     return (
         <div className="signup">
         <Head>
-            <title>Spotify | Sign Up</title>
+            <title>Sign Up - Spotify</title>
             <meta name="description" content="Spotify Layout Clone" />
             <link rel="icon" href="/favicon.ico" />
         </Head>
@@ -42,14 +42,95 @@ const signup = () => {
                         <h2>
                             Sign up with your email address
                         </h2>
+                        <form>
+
+                            <div className="signup--form">
+                               <label htmlFor="emailAddress">Email Address</label> 
+                               <input type="email" name="emailAddress" placeholder="Enter your email" required/>
+                            </div>
+
+                            <div className="signup--form">
+                               <label htmlFor="confirmEmailAddress">Confirm Email Address</label> 
+                               <input type="email" name="confirmEmailAddress" placeholder="Enter your email again"/>
+                            </div>
+
+                            <div className="signup--form">
+                               <label htmlFor="password">Create a password</label> 
+                               <input type="password" name="password" placeholder="Create a password" required/>
+                            </div>
+
+                            <div className="signup--form">
+                               <label htmlFor="name">What should we call you?</label> 
+                               <input type="text" name="name" placeholder="Enter a profile name" required/>
+                               <p>This appears on your profile</p>
+                            </div>
+
+                            <div className="signup--form">
+                                <label htmlFor="dob">What's your date of birth?</label> 
+                                <div className="signup--form signup--form__dob">
+                                    <div>
+                                        <label htmlFor="dob-day">Day</label>
+                                        <input type="text" id="dd" maxLength="2" onkeyup="moveToNext(this,'mm')" placeholder="DD"/> 
+                                    </div>
+                                    
+                                    <div>
+                                        <label htmlFor="dob-month">Month</label>
+                                        <input type="text" id="mm" maxLength="2" onkeyup="moveToNext(this,'yyyy')" placeholder="Month"/>
+                                    </div>
+
+                                    <div>
+                                        <label htmlFor="dob-year">Year</label>
+                                        <input type="text" id="yyyy" maxLength="4" placeholder="Year"/>
+                                    </div>
+                                 
+                                </div>
+
+                                <div className="signup--form signup--form__gender">
+                                    <label htmlFor="gender">What's your gender?</label>
+                                    <div>                                    
+                                        <div>
+                                            <input type="radio" name="male" id="male" value="male"/>  
+                                            <label htmlFor="male">Male</label>
+                                        </div>
+
+                                        <div>
+                                            <input type="radio" name="female" id="female" value="female"/>  
+                                            <label htmlFor="female">Female</label>
+                                        </div>
+
+                                        <div>
+                                            <input type="radio" name="non-binary" id="non-binary" value="non-binary"/>  
+                                            <label htmlFor="non-binary">Non-binary</label>
+                                        </div>
+
+                                        <div>
+                                            <input type="radio" name="other" id="other" value="other"/>  
+                                            <label htmlFor="other">Other</label>
+                                        </div>
+
+                                        {/* <div>
+                                            <input type="radio" name="not-to-say" id="not-to-say" value="not-to-say"/>  
+                                            <label htmlFor="not-to-say">Prefer not to say</label>
+                                        </div> */}
+
+                                    </div>
+
+                                    
+                                </div>
+
+
+                               
+                            </div>
+                            
+                        </form>
                     </div>
-                    <div className="">
+                    <div className="captcha">
                         Captcha
                     </div>
-                    <div className="">
+                    <div className="lowerText">
                         lowertext
                     </div>
-                    <div className="">
+                    <div className="buttons">
                         button
                     </div>
                 </div>

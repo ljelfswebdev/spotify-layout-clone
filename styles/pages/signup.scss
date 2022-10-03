@@ -70,10 +70,78 @@
             display:grid;
             justify-content: center;
             align-items: center;
+            width:50%;
+            margin: auto;
+
+            @media screen and (max-width:600px){
+                width:90%;
+            }
             h2{
                 font-size: rem-calc(24);
                 font-weight:bold;
                 font-family: $primary;
+            }
+
+            .signup--form{
+                display:grid;
+                margin-bottom: rem-calc(25);
+
+                label {
+                    font-size: rem-calc(16);
+                    font-weight: bold;
+                    font-family: $primary;
+                    margin-bottom: rem-calc(5);
+                }
+
+                input {
+                    height: rem-calc(40);
+                    border: 2px solid gray;
+                    border-radius: 5px;
+                    padding: rem-calc(5);
+                    width:100%;
+                   
+                }
+
+                p{
+                    font-size: rem-calc(14);
+                    font-weight:normal;
+                    font-family: $primary;
+                    margin-bottom: rem-calc(5); 
+                }
+
+                &__dob {
+                    display:grid;
+                    grid-template-columns: 1fr 2fr 1fr;
+                    grid-gap:rem-calc(20);
+
+                    label{
+                        font-weight:400;
+                    }
+                }
+
+                &__gender{
+                    display:block;
+                    div{
+                        display:flex;
+                        align-items: center;
+                        justify-content: space-between ;
+                        margin-top:rem-calc(5);
+                        div{
+                            display:flex;
+                            input{
+                                height: rem-calc(20);
+                                width:rem-calc(20);
+                                margin-right: rem-calc(5)
+                            }
+                            label{
+                                margin-bottom: rem-calc(0);
+                                font-weight: 400;
+                            }
+              
+                        }
+                    }
+
+                }
             }
         }
     }
